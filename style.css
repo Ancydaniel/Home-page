@@ -1,0 +1,480 @@
+.first {
+    background-color: #163651;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    
+    height: 656px;
+    
+ 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.toggle {
+    font-size: 30px;
+    color: white;
+    float: left;
+    line-height: 45px;
+    margin-left: 5%;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    background-color: #173651;
+    height: 45px;
+    width: 100%;
+}
+
+ul {
+    float: left;
+    margin-left: 5%;
+}
+
+.socialtop {
+    float: right;
+    margin-right: 5%;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+}
+
+ul a {
+    font-weight: 400;
+    padding: 15px;
+    line-height: 45px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+.top-social a {
+    padding: 13px;
+    color: #fff;
+}
+
+.top-social {
+    padding: 14px 15px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .toggle {
+        display: block;
+    }
+
+    ul {
+        z-index: -1;
+        margin-top: -15px;
+        position: fixed;
+        top: -400px;
+        right: 0;
+        left: 0;
+        width: 200px;
+        background: #222222;
+        display: inline-block;
+        transition: top .4s;
+        margin-left: 0;
+    }
+
+    ul.show {
+        top: 60px;
+    }
+image    ul li {
+        top: 0;
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    ul {
+        width: 100%;
+    }
+
+}
+
+.header {
+    background: #ffff;
+    clear: both;
+    height: 75px;
+}
+
+.header #logo {
+    float: left;
+    margin: 0;
+    width: 4rem;
+    margin-left: 5%;
+}
+
+.header #navlist {
+    float: right;
+    margin-right: 4rem
+}
+
+.header #navlist li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.header #navlist li a:link {
+    line-height: 75px;
+    height: 75px;
+}
+
+.item {
+    color: black;
+    font-family: monospace;
+}
+
+/* Responsive styles using media queries */
+@media (max-width: 768px) {
+
+    /* Adjust logo size for smaller screens */
+    .header #logo {
+        width: 3rem;
+    }
+
+
+    .header #navlist {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+        /* Show toggle button */
+    }
+
+    /* Show the navigation list when toggle is checked (e.g., for mobile menu) */
+    .toggle:checked+.header #navlist {
+        display: block;
+    }
+
+    /* Style the links in the navigation list for smaller screens */
+    .header #navlist li {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.image {
+    /* width: -webkit-fill-available;    */
+    /* background-image: url("https://media.geeksforgeeks.org/wp-content/uploads/rk.png"); */
+    /* background-position: center center; */
+    /* width: 10vh; */
+    background-size: cover;
+    background: url(img/bg.png);
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+    /* background-color: #f0f0f0; */
+}
+
+.right-section {
+  
+    
+    display: inline-flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    /* background-color: #e0e0e0; */
+}
+
+.text-and-button {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form label,
+.form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    /* background: white; */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+
+input[type="PRS Number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+    form {
+        max-width: 300px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="submit"],
+    input[type="PRS Number"] {
+        font-size: 14px;
+    }
+}
+
+.take {
+    color: white;
+    font-size: 7vh;
+}
+
+
+.take {
+    color: white;
+    
+    text-align: left;
+   
+font-family: Inter;
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%;
+}
+
+@media screen and (max-width: 768px) {
+    .take {
+        font-size: 5vh;
+    }
+}
+
+
+.text-container {
+    text-align: left;
+}
+
+.description {
+    color: white;
+    font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+text-align: left;
+}
+
+
+
+
+.click {
+    margin-top: 32px;
+    
+    
+    border-radius: 2rem;
+    background-color: #40A5A2;
+    display: inline-flex;
+align-items: flex-start;
+text-align: left;
+margin-right: 88%;
+}
+
+.submit-btn {
+    display: inline-flex;
+    height: 40px;
+    padding: 11px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 24px;
+background: var(--tax-dark-blue, #02274C);
+}
+
+
+
+
+.form {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.card {
+    
+ 
+    width: 80%;
+  }
+
+
+.container-card {
+    padding: 2px 16px;
+  }
+
+
+* {
+    box-sizing: border-box;
+  }
+
+
+  .column-box {
+    float: left;
+    width: 33.33333333333333%;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .check-style {
+
+display: flex;
+width: 20px;
+height: 20px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 2px;
+
+  }
+
+
+  .check-font {
+
+    color: var(--black, #091520);
+    /* 14 pt */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+  }
+
+  .check-font1 {
+
+    color: var(--blue, #00A5DF);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+text-decoration-line: underline;
+  }
+
+ .new-section {
+   
+    height: 390px;
+    flex-shrink: 0;
+    background: var(--bg-3, #F0F9F9);
+
+  }
+
+  .round {
+
+    width: 64px;
+height: 64px;
+flex-shrink: 0;
+    border-radius: 20px;
+    background: #40A5A2;
+    text-align: center;
+    margin-right: 10px;
+    border-radius:50%;
+    display:inline-block;
+    padding:10px;
+  }
+
+  .row-p{
+
+    color: var(--dark-blue, #163651);
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* H6 */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    
+  }
+
+  .row-p2{
+
+    color: var(--black, #091520);
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* paragraph */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    
+  }
